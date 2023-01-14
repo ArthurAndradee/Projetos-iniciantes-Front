@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="./styles.css">
+
+  <title>Formulário de contratação</title>
+</head>
+<body>
+  <section>
+    <h1>Formulário para contratação de professores</h1>
+
+    <p>
+      Olá professor! Preencha o formulário abaixo com o que se pede para que sua 
+      candidatura à vaga seja concluída.
+    </p>
+
+    <form id="form" name="form">
+
+      <p>
+            <label for="name">Nome Completo</label>
+            <input type="text" name="name" id="name" required />
+      </p>
+
+      <p>
+            <label for="email">E-mail</label>
+            <input type="email" name="email" id="email" required />
+      </p>
+
+      <p>
+            <label for="age">Idade:</label>
+            <input type="number" max="100" min="22" name="age" id="age" required/>
+      </p>
+
+      <p class="checkbox-wrapper">
+            <label for="subject">Para qual matéria você está se candidatando para lecionar?</label>
+      </p>
+
+    <div>
+
+       <div>
+           <input type="checkbox" id="subject-input" name="Subject"/>
+           <label for="Matemática"> Matemática </label>
+       </div>
+      
+       <div>
+           <input type="checkbox" id="subject-input" name="Subject"/>
+           <label for="Português"> Português </label>
+       </div>
+
+       <div>
+           <input type="checkbox" id="subject-input" name="Subject"/>
+           <label for="Biologia"> Biologia </label>
+       </div>
+
+       <div>
+           <input type="checkbox" id="subject-input" name="Subject"/>
+           <label for="Ciências"> Ciências </label>
+       </div>
+
+        <div>
+            <input type="checkbox" id="subject-input" name="Subject"/>
+            <label for="História"> História </label>
+        </div>
+
+        <div>
+            <input type="checkbox" id="subject-input" name="Subject"/>
+            <label for="Geografia"> Geografia </label>
+        </div>
+
+        <div>
+            <input type="checkbox" id="subject-input" name="Subject"/>
+            <label for="Matemática"> Artes </label>
+        </div>
+
+    </div>
+
+      <p>Quais seus turnos disponíveis? *</p>
+      <div class="radio-inputs-wrapper">
+        <input type="radio" id="Manhã" name="availableShifts"/>
+        <label for="Manhã"> Manhã </label>
+
+        <input type="radio" id="Tarde" name="availableShifts"/>
+        <label for="Tarde"> Tarde </label>
+
+        <input type="radio" id="Noite" name="availableShifts"/>
+        <label for="Noite"> Noite </label>
+      </div>
+
+      <p>Qual o seu nível de escolaridade? *</p>
+      <div class="radio-inputs-wrapper">
+        <input type="radio" id="ensino1" name="schooling"/>
+        <label for="ensino1"> Ensino Superior Completo </label>
+
+        <input type="radio" id="ensino2" name="schooling"/>
+        <label for="ensino2"> Cursando Mestrado </label>
+
+        <input type="radio" id="ensino3" name="schooling"/>
+        <label for="ensino3"> Mestrado Completo </label>
+
+        <input type="radio" id="ensino4" name="schooling">
+        <label for="ensino4"> Cursando Doutorado </label>
+
+        <input type="radio" id="ensino5" name="schooling"/>
+        <label for="ensino5"> Doutorado Completo </label>
+      </div>
+
+      <label for="descricao"> Fale um pouco sobre você:</label>
+      <input type="textarea"  pattern=".{200,}" title="Insira no mínimo 200 caracteres" id="texto" name="descricao">
+      <br>
+
+      <footer>
+        <button class="submit-button">Enviar</button>
+      </footer>
+    </form>
+  </section>
+</body>
+
+<script src="./index.js"></script>
+</html>

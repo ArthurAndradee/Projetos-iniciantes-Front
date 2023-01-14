@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="./styles.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Módulo 4 - Aula 02</title>
+  </head>
+
+  <body>
+    <fieldset>
+    <legend></legend>
+    <div class="wrapper">
+      <h1>Meus dados</h1>
+
+      <form id="form" name="form">
+        <p>
+          <label for="name">Nome:</label>
+          <input type="text" name="name" id="name" required>
+        </p>
+
+        <p>
+          <label for="email">Email:</label>
+          <input type="email" name="email" id="email" required/>
+        </p>
+
+        <p>
+          <label for="password">Senha:</label>
+          <input type="password" pattern=".{8,}" title="Insira no mínimo 8 caracteres" name="password" id="password" required/>
+        </p>
+
+        <p>
+          <label for="description">Fale um pouco sobre você</label><br>
+          <textarea name="description" id="description" cols="30" rows="10" required></textarea>
+        </p>
+
+        <p>
+            <label for="Whatsapp">Whatsapp</label>
+            <input type="tel" name="Whatsapp" id="name" required/>
+        </p>
+
+        <p>
+            <label for SkillLevel>Qual seu nível de conhecimento sobre HMTL?</label>
+            <input type="Range" name="SkillLevel" id="SkillLevel" required/>
+        </p>
+
+        <p>
+            <label for="gender">Informe seu gênero</label>
+            <select name="gender" id="gender" required>
+                <option value="gender1"></option>
+                <option value="gender1">Masculino</option>
+                <option value="gender2">Feminino</option>
+                <option value="gender3">Outro</option>
+            </select>
+        </p>
+
+        <p class="checkbox-wrapper"> Qual das tecnologias abaixo você mais tem conhecimento? </p>
+
+        <div>
+            <input type="radio" id="HTML" name="technology" />
+            <label for="HTML"> HTML </label>
+        </div>
+        
+        <div>
+            <input type="radio" id="CSS" name="technology"/>
+            <label for="CSS"> CSS </label>
+        </div>
+
+        <div>
+            <input type="radio" id="js" name="technology"/>
+            <label for="js"> Javascript </label>
+        </div><br>
+
+        <input type="checkbox" id="RememberMe" name="RememberMe" required/>
+        <label for="RememberMe">Concordo com os Termos de Privacidade</label>
+
+        <div><br>
+            <input type="reset" value="Redefinir"/>
+            <input type="submit" value="Enviar"/>
+        </div>
+     </form>
+    </div>
+   </fieldset>
+  </body>
+
+  <script src="./index.js"></script>
+</html>
