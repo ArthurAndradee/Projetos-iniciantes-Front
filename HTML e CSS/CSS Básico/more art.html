@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link rel="stylesheet" href="./styles.css" />
+
+  <style>
+    * {
+  margin: 0;
+  padding: 0;
+
+  box-sizing: border-box;
+    }
+
+    body {
+        background: #343a40;
+        color: #2b2d42;
+        -webkit-font-smoothing: antialiased;
+    }
+
+    section {
+        height: 100vh;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }   
+    .board {
+        width:600px;
+        height: 600px;
+
+        display:grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .square {
+        width:100px;
+        height: 100px;
+        display:flex;
+        align-items: center;
+        justify-content: center;
+
+        background-color: aqua;
+    }
+  </style>
+
+  <title>Desafio Conquer Módulo 7</title>
+</head>
+
+<body>
+  <section>
+    <div class="board">
+      <div class="square">1</div>
+      <div class="square">2</div>
+      <div class="square">3</div>
+
+      <div class="square">1</div>
+      <div class="square">2</div>
+      <div class="square">3</div>
+
+      <div class="square">1</div>
+      <div class="square">2</div>
+      <div class="square">3</div>
+    </div>
+  </section>
+</body>
+
+</html>

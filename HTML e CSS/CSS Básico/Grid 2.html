@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <title>Módulo 7 - Aula 2 - Mão na Massa Resposta</title>
+
+    <style>
+        body{
+            margin:0;
+            padding: 0;
+        }
+
+        .grid-container {
+            display:grid;
+            grid-template-areas: 
+            'header header header header header header'
+            'filters productpic productpic overview purchaseoptions purchaseoptions'
+            'filters productpic productpic overview purchaseoptions purchaseoptions'
+            'filters client client client client client'
+            'footer footer footer footer footer footer';
+            gap:50px;
+            padding: 10px;
+            margin: 7px;
+            border: 2px solid black;
+            box-sizing: border-box;
+        }
+
+        .item-1 {
+            grid-area: header;
+        }
+
+        .item-2 {
+            grid-area: filters;
+        }
+
+        .item-3 {
+            grid-area: productpic;
+        }
+
+        .item-4 {
+            grid-area: overview;
+        }
+
+        .item-5 {
+            grid-area: purchaseoptions;
+        }
+
+        .item-6 {
+            grid-area: client;
+        }
+
+        .item-7 {
+            grid-area: footer;
+        }
+    </style>
+
+</head>
+<body>
+    <div class="grid-container">
+        <div class="item-1">Cabeçalho</div>
+        <div class="item-2">Filtros</div>
+        <div class="item-3">Foto produto</div>
+        <div class="item-4">Resumo</div>
+        <div class="item-5">Opções de compra</div>
+        <div class="item-6">Resenhas de clientes</div>
+        <div class="item-7">Rodapé</div>
+    </div>
+</body>
+</html>
