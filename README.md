@@ -1,3 +1,2 @@
-# Front-end-Aprendizado
-Repositório de projetos básicos feitos com o intuito de começar a jornada de aprendizado front-end.
-
+Olá, sou o Arthur! Tenho 17 anos e começoa agora meu caminho na área da programação!
+Essas são atividades realizadas em prol de praticar o aprendizado adquirido durante a jornada de programador front-end.
